@@ -1,0 +1,153 @@
+    /* horizontal menu */
+    
+    .carousel-inner img {
+        /* max-width: 100%; */
+        object-position: center center;
+        width: 200px;
+        height: 550px;
+        object-fit: cover;
+        image-rendering: auto;
+    }
+    /*end reset*/
+    
+    body p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Ubuntu Condensed', sans-serif;
+    }
+    /*--header--*/
+    
+    .header h1 {
+        font-size: 3em;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        color: #fff;
+        font-weight: 400;
+        margin: 0.5em;
+    }
+    /*--//header--*/
+    /*--main--*/
+    /*-- about-bottom --*/
+    
+    h2.tittle {
+        text-align: center;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1em;
+        background: #fe8f30;
+    }
+    
+    .ui label {
+        font-size: 15px;
+        color: #fff;
+        text-align: left;
+        display: inline-block;
+        font-weight: 500;
+        margin: 0px 0px 10px 12px;
+        letter-spacing: 1px;
+        font-family: 'Ubuntu Condensed', sans-serif;
+    }
+    
+    .ui input[type="text"],
+    .ui input input[type="date"],
+    .ui input input[type="number"],
+    .ui input input[type="select"],
+    .ui input input[type="tel"],
+    .ui input input[type="time"] {
+        width: 92%;
+        color: #9a9797;
+        outline: none;
+        font-size: 0.9em;
+        line-height: 25px;
+        padding: 5px 10px;
+        border: none;
+        -webkit-appearance: none;
+        margin-bottom: 1.1em;
+        background: #fff;
+        font-family: 'Ubuntu Condensed', sans-serif;
+    }
+    
+    .ui input[type="email"] {
+        text-align: center;
+        color: #9a9797;
+        outline: none;
+        font-size: 0.9em;
+        line-height: 25px;
+        padding: 5px 10px;
+        border: none;
+        -webkit-appearance: none;
+        margin-bottom: 1.1em;
+        background: #fff;
+        font-family: 'Ubuntu Condensed', sans-serif;
+    }
+    
+    .ui input[type="text"] {
+        border: none;
+        text-align: center;
+    }
+    
+    .ui input[type="submit"] {
+        text-transform: uppercase;
+        background: #fe8f30;
+        color: #FFFFFF;
+        padding: .7em 0em;
+        border: none;
+        font-size: 1em;
+        outline: none;
+        width: 34%;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin-top: 2.4em;
+        cursor: pointer;
+        font-family: 'Ubuntu Condensed', sans-serif;
+    }
+    
+    .ui input[type="submit"]:hover {
+        background: #fff;
+        color: #fe8f30;
+    }
+    
+    .ui {
+        background: rgba(12, 12, 12, 0.51);
+        padding: 2em 0em;
+        width: 100%;
+    }
+    
+    .ui select {
+        width: 92%;
+        color: #9a9797;
+        outline: none;
+        font-size: 0.9em;
+        line-height: 25px;
+        padding: 5px 10px;
+        border: none;
+        -webkit-appearance: none;
+        margin-bottom: 1.1em;
+        background: #fff;
+        font-family: 'Ubuntu Condensed', sans-serif;
+    }
+    
+    input[type="submit"] {
+        font-size: 0.75em;
+        padding: .8em 0em;
+        width: 35%;
+        margin-top: 1.8em;
+        text-transform: uppercase;
+        background: #fe8f30;
+        color: #FFFFFF;
+        padding: .7em 0em;
+        border: none;
+        font-size: 1em;
+        outline: none;
+        width: 34%;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin-top: 2.4em;
+        cursor: pointer;
+        font-family: 'Ubuntu Condensed', sans-serif;
+    }

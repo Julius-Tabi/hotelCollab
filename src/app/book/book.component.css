@@ -1,14 +1,17 @@
     /* horizontal menu */
     
     .carousel-inner img {
-        /* max-width: 100%; */
         object-position: center center;
-        width: 200px;
+        width: 100%;
         height: 550px;
         object-fit: cover;
-        image-rendering: auto;
+        position: relative;
+        margin: 5px;
+        /* border: 1px solid #ccc; */
+        float: left;
+        width: 180px;
+        display: block;
     }
-    /*end reset*/
     
     body p,
     h1,
@@ -32,6 +35,15 @@
     /*--//header--*/
     /*--main--*/
     /*-- about-bottom --*/
+    
+    h3.tittle {
+        text-align: center;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1em;
+        background: #f7ad6c;
+    }
     
     h2.tittle {
         text-align: center;

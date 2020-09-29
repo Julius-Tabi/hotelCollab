@@ -8,11 +8,15 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {SharedService } from 'src/app/shared/shared.service';
 
 import { from } from 'rxjs';
+import { HomeComponent } from './home/home.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    BookComponent
+    BookComponent,
+    HomeComponent,
+    
   ],
   imports: [
     BrowserModule,

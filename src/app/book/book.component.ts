@@ -8,6 +8,8 @@ import {SharedService } from 'src/app/shared/shared.service';
 
 import { Router } from '@angular/router';
 import { from } from 'rxjs';
+import { booking } from '../arrayList';
+import bookingsArray from '../array';
 @Component({
   selector: 'app-book',
   templateUrl: './book.component.html',
@@ -15,24 +17,35 @@ import { from } from 'rxjs';
 })
 export class BookComponent implements OnInit {
 editForm: FormGroup
- CheckOutdate;
+    firstname;
+    lastname;
+    IdNUm;
+    phonenumber;
+    email;
+    NoofRooms;
+    roomType;
+    CheckIndate;
+    CheckOutdate;
+   msg: string;
   booked: boolean;
-  msg: string;
-  CheckIndate;
-  phonenumber: string;
-
+  arr = [];
   constructor(private fb: FormBuilder, private router: Router, private sharedService: SharedService) {
+  }
+  listb(firstname, lastname, IdNUm, phonenumber, email, NoofRooms, roomType, CheckIndate, CheckOutdate) {
+   let book = new booking(firstname, lastname, IdNUm, phonenumber, email, NoofRooms, roomType, CheckIndate, CheckOutdate)
+    bookingsArray.push(book);
+    console.log(bookingsArray);
   }
 
   ngOnInit(): void {
     this.editBookingForm();
   }
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  
  editBookingForm() {
     this.editForm = this.fb.group({
       firstname: ['', Validators.required],
       lastname: ['', Validators.required],
-      IdNUm: ['', Validators.required],
+      IdNUm: ['', [ Validators.required, Validators.minLength(13), Validators.maxLength(16)]],
       phonenumber: ['', [ Validators.required, Validators.minLength(10), Validators.maxLength(10)]],
       email: ['', [Validators.required, Validators.email]],
       NoofRooms: ['', Validators.required],

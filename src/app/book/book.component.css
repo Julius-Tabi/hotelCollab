@@ -42,7 +42,7 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 1em;
-        background: #f7ad6c;
+        background: #9e202f;
     }
     
     h2.tittle {
@@ -51,10 +51,11 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 1em;
-        background: #fe8f30;
+        background: #bb2739;
+        color: whitesmoke;
     }
     
-    .ui label {
+    .ui span {
         font-size: 15px;
         color: #fff;
         text-align: left;
@@ -103,25 +104,28 @@
         text-align: center;
     }
     
-    .ui input[type="submit"] {
+    button {
         text-transform: uppercase;
-        background: #fe8f30;
-        color: #FFFFFF;
+        /* background: #fe8f30; */
         padding: .7em 0em;
         border: none;
         font-size: 1em;
         outline: none;
-        width: 34%;
+        width: 40%;
         letter-spacing: 1px;
         font-weight: 600;
         margin-top: 2.4em;
         cursor: pointer;
         font-family: 'Ubuntu Condensed', sans-serif;
+        margin-left: 55%;
+        /* font-weight: 400; */
+        background-color: #d63447;
+        text-decoration: none;
     }
     
-    .ui input[type="submit"]:hover {
-        background: #fff;
-        color: #fe8f30;
+    button:hover {
+        color: #9e202f;
+        text-decoration: underline;
     }
     
     .ui {
@@ -141,25 +145,5 @@
         -webkit-appearance: none;
         margin-bottom: 1.1em;
         background: #fff;
-        font-family: 'Ubuntu Condensed', sans-serif;
-    }
-    
-    input[type="submit"] {
-        font-size: 0.75em;
-        padding: .8em 0em;
-        width: 35%;
-        margin-top: 1.8em;
-        text-transform: uppercase;
-        background: #fe8f30;
-        color: #FFFFFF;
-        padding: .7em 0em;
-        border: none;
-        font-size: 1em;
-        outline: none;
-        width: 34%;
-        letter-spacing: 1px;
-        font-weight: 600;
-        margin-top: 2.4em;
-        cursor: pointer;
         font-family: 'Ubuntu Condensed', sans-serif;
     }

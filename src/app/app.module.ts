@@ -9,6 +9,7 @@ import {SharedService } from 'src/app/shared/shared.service';
 
 import { from } from 'rxjs';
 import { HomeComponent } from './home/home.component';
+import { PayPageComponent } from './pay-page/pay-page.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     BookComponent,
     HomeComponent,
+    PayPageComponent,
     
   ],
   imports: [

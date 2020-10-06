@@ -13630,7 +13630,7 @@ Author URL: http://w3layouts.com
   
   .w3l-main-slider .banner-view:before {
       content: "";
-      /* background: rgba(0, 0, 0, 0.55); */
+      background: rgba(0, 0, 0, 0.30);
       position: absolute;
       top: 0;
       min-height: 100%;
@@ -18245,7 +18245,7 @@ Author URL: http://w3layouts.com
   }
   
   .editContent2 {
-      text-decoration-style: var(--light);
+      /* text-decoration-style: var(--light); */
       background-color: whitesmoke;
       text-align: center;
   }
@@ -18256,12 +18256,15 @@ Author URL: http://w3layouts.com
   
   .mainNav {
       background-color: yellow;
+      /* width: 100%; */
   }
   
   .logo {
       text-align: center;
       color: whitesmoke;
-      padding-left: 0px;
-      background-color: lightslategray;
+      padding: 0px;
+      background-color: transparent;
       width: 100%;
+      padding-left: 0px;
+      margin-left: 0px;
   }

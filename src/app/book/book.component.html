@@ -31,8 +31,8 @@
                         <div class="col-lg-6">
                             <div class="form-group number">
                                 <span class="form-label">ID/Passport Number</span>
-                                <input type="tel" formControlName="IdNUm" pattern="^\d{10}$" class="form-control" minlength="10" maxlength="10" required>
-                                <span class="error-block" *ngIf="!f.IdNUm.valid && (f.IdNUm.touched || booked)">
+                                <input type="tel" formControlName="IdNUm" pattern="^\d{10}$" class="form-control" minlength="13" maxlength="16" required>
+                                <!-- <span class="error-block" *ngIf="!f.IdNUm.valid && (f.IdNUm.touched || booked)">
                             <p class="alert alert-warning">Please provide valid valid ID or Passport number</p>
                                 <span *ngIf="f.IdNUm.hasError('required')">
                             <p class="alert alert-warning">Please provide ID or Passport number</p>
@@ -44,7 +44,7 @@
                     </span>
                                 <span class="error-block" *ngIf="f.phonenumber.hasError('maxLength')">
                             <p class="alert alert-info">mobile number cannot have more than 10 digits</p>
-                    </span>
+                    </span> -->
 
                             </div>
                         </div>

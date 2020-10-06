@@ -60,6 +60,11 @@ editForm: FormGroup
      
   }
   onSubmit() {
+    console.log(this.editForm.value.firstname)
+    let book = new booking(this.editForm.value.firstname, this.editForm.value.lastname, this.editForm.value.IdNUm, this.editForm.value.phonenumber, this.editForm.value.email, this.editForm.value.NoofRooms, this.editForm.value.roomType, this.editForm.value.CheckIndate, this.editForm.value.CheckOutdate)
+    bookingsArray.push(book);
+    console.log(bookingsArray);
+    
     this.booked = true;
     if (this.editForm.valid) {
     

@@ -38,10 +38,10 @@
                                     <a class="nav-link js-scroll-trigger active text-light" href="/about">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link js-scroll-trigger text-light" href="#services">Services</a>
+                                    <a class="nav-link js-scroll-trigger text-light" href="/services">Services</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link js-scroll-trigger text-light" href="#contact">Contact</a>
+                                    <a class="nav-link js-scroll-trigger text-light" href="/contact">Contact</a>
 
                                 </li>
 
@@ -73,7 +73,7 @@
                                 <span class="form-label">First Name </span>
                                 <input type="text" formControlName="firstname" class="form-control">
                                 <span class="error-block" *ngIf="!f.firstname.valid && (f.firstname.touched ||  booked)">
-                            <p>Please provide first name</p>
+                            <p>Provide first name</p>
                         </span>
                             </div>
                         </div>
@@ -82,27 +82,27 @@
                                 <span class="form-label">Last Name </span>
                                 <input type="text" formControlName="lastname" class="form-control">
                                 <span class="error-block" *ngIf="!f.lastname.valid && (f.lastname.touched ||  booked)">
-                            <p>Please provide last name</p>
+                            <p>Provide last name</p>
                         </span>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group number">
                                 <span class="form-label">ID/Passport Number</span>
-                                <input type="tel" formControlName="IdNUm" pattern="^\d{10}$" class="form-control" minlength="13" maxlength="16" required>
-                                <!-- <span class="error-block" *ngIf="!f.IdNUm.valid && (f.IdNUm.touched || booked)">
+                                <input type="tel" formControlName="IdNUm" pattern="^\d{13}$" class="form-control" minlength="13" maxlength="13" required>
+                                <span class="error-block" *ngIf="!f.IdNUm.valid && (f.IdNUm.touched || booked)">
                             <p class="alert alert-warning">Please provide valid valid ID or Passport number</p>
                                 <span *ngIf="f.IdNUm.hasError('required')">
-                            <p class="alert alert-warning">Please provide ID or Passport number</p>
+                            <p class="alert alert-warning">Provide ID/Passport No.</p>
                       
                         </span>
                                 </span>
-                                <span class="error-block" *ngIf="f.phonenumber.hasError('minLength')">
-                            <p class="alert alert-info">mobile number cannot have less than 10 digits</p>
+                                <span class="error-block" *ngIf="f.IdNum.hasError('minLength')">
+                            <p class="alert alert-info">ID is less than 13 digits</p>
                     </span>
-                                <span class="error-block" *ngIf="f.phonenumber.hasError('maxLength')">
-                            <p class="alert alert-info">mobile number cannot have more than 10 digits</p>
-                    </span> -->
+                                <span class="error-block" *ngIf="f.IdNum.hasError('maxLength')">
+                            <p class="alert alert-info">ID is more than 13 digits</p>
+                    </span>
 
                             </div>
                         </div>
@@ -113,15 +113,15 @@
                                 <span class="error-block" *ngIf="!f.phonenumber.valid && (f.phonenumber.touched || booked)">
                             <p class="alert alert-warning">Please provide valid mobile number</p>
                                 <span *ngIf="f.phonenumber.hasError('required')">
-                            <p class="alert alert-warning">Please provide mobile number</p>
+                            <p class="alert alert-warning">Provide mobile number</p>
                       
                         </span>
                                 </span>
                                 <span class="error-block" *ngIf="f.phonenumber.hasError('minLength')">
-                            <p class="alert alert-info">mobile number cannot have less than 10 digits</p>
+                            <p class="alert alert-info">Mobile no.has less than 10 digits</p>
                     </span>
                                 <span class="error-block" *ngIf="f.phonenumber.hasError('maxLength')">
-                            <p class="alert alert-info">mobile number cannot have more than 10 digits</p>
+                            <p class="alert alert-info">Mobile no.has more than 10 digits</p>
                     </span>
 
                             </div>
@@ -132,9 +132,9 @@
                                 <input type="email" formControlName="email" class="form-control">
                                 <span class="error-block" *ngIf="!f.email.valid && (f.email.touched || booked)">
                         <span *ngIf="f.email.hasError('required')">
-                        <p class="alert alert-warning">Please provide name</p>
+                        <p class="alert alert-warning">Provide Email</p>
                     </span>
-                                <p class="alert alert-info">Please provide valid email</p>
+                                <p class="alert alert-info">Email Invalid</p>
                                 </span>
                             </div>
                         </div>
@@ -148,7 +148,7 @@
                         
                 </select>
                                 <span class="error-block" *ngIf="!f.roomType.valid && (f.roomType.touched ||  booked)">
-                            <p class="alert alert-warning">Please Select A Room</p>
+                            <p class="alert alert-warning">Select A Room</p>
                         </span>
                                 <span class=" select-arrow "></span>
                             </div>
@@ -157,13 +157,13 @@
                             <div class="form-group">
                                 <span class="form-label">Number of Rooms</span>
                                 <select class="form-control" formControlName="NoofRooms">
-                         <option>SUIT</option>
-                        <option>DELUX</option>
-                        <option>TOP NOTCH</option>
+                         <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
                         
                 </select>
                                 <span class="error-block" *ngIf="!f.NoofRooms.valid && (f.NoofRooms.touched ||  booked)">
-                            <p class="alert alert-warning">Please Select A Room</p>
+                            <p class="alert alert-warning">Select no.of Rooms</p>
                         </span>
                                 <span class=" select-arrow "></span>
                             </div>
@@ -173,7 +173,7 @@
                                 <span class="form-label ">Check in date </span>
                                 <input type="date" (click)="disableData()" name="CheckIndate" formControlName="CheckIndate" class="form-control" [(ngModel)]="CheckIndate">
                                 <span class="error-block" *ngIf="!f.CheckIndate.valid &&  (f.CheckIndate.touched ||  booked)">
-                            <p class="alert alert-warning">Please Select Check in Date </p>
+                            <p class="alert alert-warning">Select Check in Date </p>
                         </span>
 
                             </div>
@@ -184,11 +184,11 @@
                                 <span class="form-label ">Check Out Date </span>
                                 <input type="date" (click)="disableDate()" name="CheckOutdate" formControlName="CheckOutdate" class="form-control" [(ngModel)]="CheckOutdate">
                                 <span class="error-block" *ngIf="!f.CheckOutdate.valid &&  (f.CheckOutdate.touched ||  booked)">
-                            <p class="alert alert-warning">Please Select Check out Date </p>
+                            <p class="alert alert-warning">Select Check out Date </p>
                           
                         </span>
                                 <span class="error-block" *ngIf="CheckIndate > CheckOutdate || CheckOutdate < CheckIndate">
-                            <p class="alert alert-danger">Check in must not be greater than Check out! </p>
+                            <p class="alert alert-danger">Check in must not be greater than Check out!</p>
                         </span>
 
                             </div>

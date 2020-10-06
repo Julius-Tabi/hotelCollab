@@ -11,6 +11,8 @@ import { from } from 'rxjs';
 import { HomeComponent } from './home/home.component';
 import { PayPageComponent } from './pay-page/pay-page.component';
 import { AboutComponent } from './about/about.component';
+import { ServicesComponent } from './services/services.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { AboutComponent } from './about/about.component';
     HomeComponent,
     PayPageComponent,
     AboutComponent,
+    ServicesComponent,
+    ContactComponent,
     
   ],
   imports: [

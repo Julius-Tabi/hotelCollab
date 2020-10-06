@@ -45,7 +45,7 @@ editForm: FormGroup
     this.editForm = this.fb.group({
       firstname: ['', Validators.required],
       lastname: ['', Validators.required],
-      IdNUm: ['', [ Validators.required, Validators.minLength(13), Validators.maxLength(16)]],
+      IdNUm: ['', [ Validators.required, Validators.minLength(13), Validators.maxLength(13)]],
       phonenumber: ['', [ Validators.required, Validators.minLength(10), Validators.maxLength(10)]],
       email: ['', [Validators.required, Validators.email]],
       NoofRooms: ['', Validators.required],

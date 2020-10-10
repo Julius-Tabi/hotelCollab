@@ -13,6 +13,7 @@ import { PayPageComponent } from './pay-page/pay-page.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
+import { ApproveComponent } from './approve/approve.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     ServicesComponent,
     ContactComponent,
+    ApproveComponent,
     
   ],
   imports: [

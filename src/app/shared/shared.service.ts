@@ -8,7 +8,7 @@ import { Cardinput } from '../model/Cardinput';
 })
 export class SharedService {
   message: Inputs;
-  
+  cardmessage: Cardinput;
   constructor() { }
   setMessage(data) {
     this.message = data;
@@ -18,5 +18,9 @@ export class SharedService {
   getmessage() {
     return this.message;
   }
+  setcard(data) { this.cardmessage = data; }
   
+  getcardDetails() {
+    return this.cardmessage;
+  }
 }

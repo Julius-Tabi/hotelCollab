@@ -74,7 +74,7 @@ editForm: FormGroup
         console.log(this.msg);
       } else {
        
-        this.router.navigate(['/display-booking']);
+        this.router.navigate(['/pay-page']);
       }
     
     }

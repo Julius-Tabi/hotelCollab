@@ -11,7 +11,8 @@ import { from } from 'rxjs';
 import { HomeComponent } from './home/home.component';
 import { PayPageComponent } from './pay-page/pay-page.component';
 import { AboutComponent } from './about/about.component';
-
+import { banking } from 'src/app/BankingArrayList';
+import bankingArray from 'src/app/bankingArray';
 import { ContactComponent } from './contact/contact.component';
 // <<<<<<< HEAD
 // import { DisplayBookingComponent } from './display-booking/display-booking.component';

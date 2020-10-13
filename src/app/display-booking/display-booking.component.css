@@ -16,3 +16,7 @@
          text-align: center;
          /* border: 5px solid cornflowerblue; */
      }
+
+     .form-label{
+         color: white;
+     }

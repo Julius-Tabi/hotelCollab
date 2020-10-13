@@ -11,9 +11,13 @@ import { from } from 'rxjs';
 import { HomeComponent } from './home/home.component';
 import { PayPageComponent } from './pay-page/pay-page.component';
 import { AboutComponent } from './about/about.component';
-import { ServicesComponent } from './services/services.component';
+
 import { ContactComponent } from './contact/contact.component';
-import { DisplayBookingComponent } from './display-booking/display-booking.component';
+// <<<<<<< HEAD
+// import { DisplayBookingComponent } from './display-booking/display-booking.component';
+// =======
+// import { ApproveComponent } from './approve/approve.component';
+// >>>>>>> 3bd1e80e0121e95e158d5eadaa773e5ce9d0b742
 
 
 @NgModule({
@@ -23,9 +27,12 @@ import { DisplayBookingComponent } from './display-booking/display-booking.compo
     HomeComponent,
     PayPageComponent,
     AboutComponent,
-    ServicesComponent,
     ContactComponent,
-    DisplayBookingComponent,
+// <<<<<<< HEAD
+//     DisplayBookingComponent,
+// =======
+//     ApproveComponent,
+// >>>>>>> 3bd1e80e0121e95e158d5eadaa773e5ce9d0b742
     
   ],
   imports: [

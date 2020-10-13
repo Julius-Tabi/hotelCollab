@@ -6,7 +6,6 @@ import { AboutComponent} from './about/about.component';
 import { BookComponent } from './book/book.component';
 import { HomeComponent } from './home/home.component';
 import { PayPageComponent } from './pay-page/pay-page.component';
-import { ServicesComponent} from './services/services.component';
 import { ContactComponent} from './contact/contact.component';
 import { DisplayBookingComponent } from './display-booking/display-booking.component';
 
@@ -18,7 +17,7 @@ const routes: Routes = [
   { path: 'display-booking', component: DisplayBookingComponent },
   { path: 'about', component: AboutComponent },
   { path: 'pay-page', component: PayPageComponent },
-  { path: 'services', component: ServicesComponent },
+  
   { path: 'contact', component: ContactComponent },
 
 ]

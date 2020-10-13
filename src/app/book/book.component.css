@@ -18389,3 +18389,8 @@
     p {
         font-size: 10px;
     }
+    
+    section {
+        height: auto;
+        background-color: transparent;
+    }

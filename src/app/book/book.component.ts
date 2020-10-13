@@ -19,10 +19,10 @@ export class BookComponent implements OnInit {
 editForm: FormGroup
     firstname;
     lastname;
-    IdNUm;
+  IdNUm;
+  email;
     phonenumber;
-    email;
-    NoofRooms;
+    
     roomType;
     CheckIndate;
     CheckOutdate;
@@ -31,8 +31,8 @@ editForm: FormGroup
   arr = [];
   constructor(private fb: FormBuilder, private router: Router, private sharedService: SharedService) {
   }
-  listb(firstname, lastname, IdNUm, phonenumber, email, NoofRooms, roomType, CheckIndate, CheckOutdate) {
-   let book = new booking(firstname, lastname, IdNUm, phonenumber, email, NoofRooms, roomType, CheckIndate, CheckOutdate)
+  listb(firstname, lastname,IdNUm,email, phonenumber, roomType, CheckIndate, CheckOutdate) {
+   let book = new booking(firstname, lastname,IdNUm,email, phonenumber, roomType, CheckIndate, CheckOutdate)
     bookingsArray.push(book);
     console.log(bookingsArray);
   }
@@ -45,10 +45,10 @@ editForm: FormGroup
     this.editForm = this.fb.group({
       firstname: ['', Validators.required],
       lastname: ['', Validators.required],
-      IdNUm: ['', [ Validators.required, Validators.minLength(13), Validators.maxLength(13)]],
-      phonenumber: ['', [ Validators.required, Validators.minLength(10), Validators.maxLength(10)]],
+      IdNUm: ['', [Validators.required, Validators.minLength(13), Validators.maxLength(13)]],
       email: ['', [Validators.required, Validators.email]],
-      NoofRooms: ['', Validators.required],
+      phonenumber: ['', [ Validators.required, Validators.minLength(10), Validators.maxLength(10)]],
+      
       roomType: ['', Validators.required],
       CheckIndate: ['', Validators.required],
       CheckOutdate: ['', Validators.required]
@@ -61,7 +61,7 @@ editForm: FormGroup
   }
   onSubmit() {
     console.log(this.editForm.value.firstname)
-    let book = new booking(this.editForm.value.firstname, this.editForm.value.lastname, this.editForm.value.IdNUm, this.editForm.value.phonenumber, this.editForm.value.email, this.editForm.value.NoofRooms, this.editForm.value.roomType, this.editForm.value.CheckIndate, this.editForm.value.CheckOutdate)
+    let book = new booking(this.editForm.value.firstname, this.editForm.value.lastname, this.editForm.value.IdNUm,  this.editForm.value.email, this.editForm.value.phonenumber, this.editForm.value.roomType, this.editForm.value.CheckIndate, this.editForm.value.CheckOutdate)
     bookingsArray.push(book);
     console.log(bookingsArray);
     
@@ -74,7 +74,7 @@ editForm: FormGroup
         console.log(this.msg);
       } else {
        
-        // this.router.navigate(['/banking-details']);
+        this.router.navigate(['/display-booking']);
       }
     
     }

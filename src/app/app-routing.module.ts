@@ -8,16 +8,18 @@ import { HomeComponent } from './home/home.component';
 import { PayPageComponent } from './pay-page/pay-page.component';
 import { ServicesComponent} from './services/services.component';
 import { ContactComponent} from './contact/contact.component';
+import { DisplayBookingComponent } from './display-booking/display-booking.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'book', component: BookComponent },
+  { path: 'display-booking', component: DisplayBookingComponent },
   { path: 'about', component: AboutComponent },
   { path: 'pay-page', component: PayPageComponent },
   { path: 'services', component: ServicesComponent },
-    { path: 'contact', component: ContactComponent },
+  { path: 'contact', component: ContactComponent },
 
 ]
 @NgModule({

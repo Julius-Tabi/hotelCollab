@@ -2,21 +2,21 @@ export class booking{
 
     firstname;
     lastname;
-    IdNUm;
+  IdNUm;
+      email;
     phonenumber;
-    email;
-    NoofRooms;
+    
     roomType;
     CheckIndate;
   CheckOutdate;
 
-    constructor(firstname, lastname,IdNUm, phonenumber, email, NoofRooms, roomType, CheckIndate, CheckOutdate){
+    constructor(firstname, lastname,IdNUm,email, phonenumber, roomType, CheckIndate, CheckOutdate){
         this.firstname =firstname;
         this.lastname = lastname;
-        this.IdNUm = IdNUm;
+      this.IdNUm = IdNUm;
+       this.email = email;
         this.phonenumber = phonenumber;
-        this.email = email;
-        this.NoofRooms = NoofRooms;
+        
         this.roomType = roomType;
         this.CheckIndate =CheckIndate;
         this.CheckOutdate = CheckOutdate;

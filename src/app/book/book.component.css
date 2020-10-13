@@ -123,7 +123,7 @@
         text-decoration: none;
     }
     
-    .ui input input[type="button"] {
+    .ui-button input[type="button"] {
         text-transform: uppercase;
         color: black;
         padding: .7em 0em;
@@ -3371,6 +3371,7 @@
         font-size: 0.875rem;
         line-height: 1.5;
         border-radius: 0.2rem;
+        padding-left: 500px;
     }
     
     .btn-block {
@@ -5319,7 +5320,7 @@
         display: none;
     }
     
-    .btn .badge {
+    .badge {
         position: relative;
         top: -1px;
     }
@@ -5330,7 +5331,7 @@
         border-radius: 10rem;
     }
     
-    .badge-primary {
+    .btn .badge-primary {
         color: #fff;
         background-color: #d63447;
     }
@@ -18383,4 +18384,8 @@
     
     .editContent1 h5 {
         color: black;
+    }
+    
+    p {
+        font-size: 10px;
     }

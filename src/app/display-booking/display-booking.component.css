@@ -1,0 +1,18 @@
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+     .container {
+         padding-bottom: 100%;
+         height: 381px;
+         font-family: poppins, sans-serif;
+         font-size: 14px;
+         color: rebeccapurple;
+         font-family: 'Poppins', sans-serif;
+         font-weight: 10;
+         /* background-color: cornsilk; */
+         text-transform: uppercase;
+     }
+     
+     h1 {
+         color: darkblue;
+         text-align: center;
+         border: 5px solid cornflowerblue;
+     }

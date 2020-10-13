@@ -4,7 +4,7 @@ export interface Inputs{
     IdNUm: number;
     phonenumber: number;
     email: string;
-    NoofRooms: number;
+    
     roomType: string;
     CheckIndate: Date;
     CheckOutdate: Date;

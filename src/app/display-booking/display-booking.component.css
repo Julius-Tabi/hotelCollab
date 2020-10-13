@@ -4,7 +4,7 @@
          height: 381px;
          font-family: poppins, sans-serif;
          font-size: 14px;
-         color: rebeccapurple;
+         color: black;
          font-family: 'Poppins', sans-serif;
          font-weight: 10;
          /* background-color: cornsilk; */
@@ -12,7 +12,7 @@
      }
      
      h1 {
-         color: darkblue;
+         color: black;
          text-align: center;
-         border: 5px solid cornflowerblue;
+         /* border: 5px solid cornflowerblue; */
      }

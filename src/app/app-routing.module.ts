@@ -17,7 +17,6 @@ const routes: Routes = [
   { path: 'display-booking', component: DisplayBookingComponent },
   { path: 'about', component: AboutComponent },
   { path: 'pay-page', component: PayPageComponent },
-  
   { path: 'contact', component: ContactComponent },
 
 ]

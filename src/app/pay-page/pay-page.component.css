@@ -1,4 +1,3 @@
-/* <<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 * {
     margin: 0;
@@ -146,50 +145,48 @@ body {
         margin-bottom: 15px;
     }
 }
-=======
-.container{
-color: white;
-  
-}
-.col-la-6{
-  position: relative;
-  top: 150px;
-  left: 350px;
-  padding: 20px;
-  
-}
-#ui{
-  color: white;
+
+.container {
+    color: white;
 }
 
+.col-la-6 {
+    position: relative;
+    top: 150px;
+    left: 350px;
+    padding: 20px;
+}
 
+#ui {
+    color: white;
+}
 
- .container .row .col-la-6 {
-position: relative;
-  background-color: rgb(54, 52, 56);
-height: 210px;
-border-radius: 50px;
-top: 200px;
-opacity: 0.9;
-right: 30px
+.container .row .col-la-6 {
+    position: relative;
+    background-color: rgb(54, 52, 56);
+    height: 210px;
+    border-radius: 50px;
+    top: 200px;
+    opacity: 0.9;
+    right: 30px
+}
 
- }
+.btn {
+    position: relative;
+    top: 20px;
+}
 
- .btn {
-   position: relative;
-   top: 20px;
- }
- .titleH{
-   border-style: solid ;
-   border-bottom: 0px;
-   color: rgb(177, 67, 67);
-   position: relative;
-   top: 90px;
-   background-color: rgb(31, 27, 27);
-   height: 70px auto;
-   color:rgb(117, 45, 45) ;
- }
- .titleH h1{
-   color: rgb(156, 59, 59) ;
- }
->>>>>>> 3bd1e80e0121e95e158d5eadaa773e5ce9d0b742 */
+.titleH {
+    border-style: solid;
+    border-bottom: 0px;
+    color: rgb(177, 67, 67);
+    position: relative;
+    top: 90px;
+    background-color: rgb(31, 27, 27);
+    height: 70px auto;
+    color: rgb(117, 45, 45);
+}
+
+.titleH h1 {
+    color: rgb(156, 59, 59);
+}

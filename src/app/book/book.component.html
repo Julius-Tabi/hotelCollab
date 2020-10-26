@@ -76,23 +76,22 @@
                             <div class="col-lg-6">
                                 <div class="form-group text">
                                     <span class="form-label">First Name </span>
-                                    <input type="text" formControlName="firstname" class="form-control"
-                                    [ngClass]="{'is-invalid': editForm.get('firstname').touched && editForm.get('firstname').valid || booked}" >
-                                    <span class="invalid-feedback">provide name</span>
+                                    <input type="text" formControlName="firstname" class="form-control">
+                                    <span class="error-block" *ngIf="!f.firstname.valid && (f.firstname.touched ||  booked)">
+                            <p class="alert alert-warning">Provide first name</p>
+                        </span>
                                     <!-- <span class="error-block" *ngIf="!f.firstname.valid && (f.firstname.touched ||  booked)">
-                            <p>Provide first name</p>
-                        </span> -->
+                            <p>Provide first name</p> -->
+
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group text">
                                     <span class="form-label">Last Name </span>
-                                    <input type="text" formControlName="lastname" class="form-control"
-                                    [ngClass]="{'is-invalid': editForm.get('lastname').touched && editForm.get('lastname').valid || booked}">
-                                    <span class="invalid-feedback">provide last name</span>
-                                    <!-- <span class="error-block" *ngIf="!f.lastname.valid && (f.lastname.touched ||  booked)">
+                                    <input type="text" formControlName="lastname" class="form-control">
+                                    <span class="error-block" *ngIf="!f.lastname.valid && (f.lastname.touched ||  booked)">
                             <p class="alert alert-warning">Provide last name</p>
-                        </span> -->
+                        </span>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -173,9 +172,9 @@
                                 <div class="form-group">
                                     <span class="form-label">Room Type</span>
                                     <select class="form-control" formControlName="roomType">
-                         <option>SUIT</option>
-                        <option>DELUX</option>
-                        <option>TOP NOTCH</option>
+                         <option>FAMILY ROOMS</option>
+                        <option>DOUBLE ROOMS</option>
+                        <option>RESORT ROOMS</option>
                         
                 </select>
                                     <span class="error-block" *ngIf="!f.roomType.valid && (f.roomType.touched ||  booked)">
@@ -224,8 +223,12 @@
                             <p class="alert alert-danger">Invalid Check Out date</p>
                         </span>
 
-                              </div>
+                                </div>
                             </div>
+
+
+
+
                         </div>
                         <div class="col-sm-6 ">
                             <div class="form-group button-small" style="margin-left: 50%; width: 100%;">
